@@ -1,0 +1,10 @@
+function E1()
+    % B trebuie sa aiba lungimea 21 pentru a avea sens inmultirea
+    A = 0:0.1:2; % o linie de 21 elemente ,de la 0 la 2 din 0.1 in 0.1
+    B = ones(21,1); % o coloana de 21 elemente ,toate fiind 1
+    C= A*B; % produsul A*B,rezultat fiind un numar
+    D= B*A;  % produsul B*A ,rezultat fiind o matrice
+    for i = 1:1:length(A)
+        E(i) = A(i)*B(i);
+    end % inmultirea  element cu element a celor doi vectori,rezultat fiind un rand,identic cu A
+end

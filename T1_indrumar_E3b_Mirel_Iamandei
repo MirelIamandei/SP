@@ -1,0 +1,10 @@
+function E3b(Z)
+
+    sum = 0;
+    for i = 1:1:length(Z)
+        sum = sum + real(Z(i));
+    end                       %suma partilor reale
+    medie= sum/length(Z)      %media partilor reale
+    patrat=Z.*Z               %elementele lui Z ridicate la patrat
+    matrice = Z'*Z            %matricea obţinută din înmulţirea vectorului iniţial cu transpusul său
+end

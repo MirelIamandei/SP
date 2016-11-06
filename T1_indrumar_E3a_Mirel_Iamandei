@@ -1,0 +1,10 @@
+function Z=E3a()
+     n= 20; % se genereaza 20 de numere complexe
+    i = sqrt(-1);% declararea lui i=radical din -1
+    for j= 1:1:n
+        rng('shuffle');%functie care genereaza intregi pozitivi astfel incat functiile rand,randi si randn sa produca o secventa previzibila de numere
+        a = randi(50); % un intreg aleator din [1,50]
+        b = randi(50);
+        Z(j) = a*i+b;
+    end
+end

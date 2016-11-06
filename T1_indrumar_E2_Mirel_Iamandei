@@ -1,0 +1,9 @@
+function E2()
+  A= normrnd(0,1,1,10);%functia normrnd genereaza 10 de numere aleator din distributia normala gaussiana avand ca parametrii mu-parametrul medie(0),sigma-parametrul de deviatie standard(1)
+  B= []; % vector in care se concateneaza elementele negative,de ex [a b]= vector din a concatenat cu b
+ for i = 1:1:length(A)
+    if A(i) < 0
+        B= [B A(i)];
+    end
+    B
+ end
